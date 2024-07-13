@@ -169,6 +169,8 @@ export default MapFilterData;
 
 ---
 
+### 07/13/2024
+
 #### 5. Inline Conditional Expressions
 
 **Definition:** Inline conditional expressions (ternary operators) allow for conditional rendering or assignment of values inline within JSX. This enables dynamic content and behavior based on conditions.
@@ -191,3 +193,171 @@ export default UserGreeting;
 
 ---
 
+# Conditional Rendering and Event Handling in React
+
+## Introduction
+
+This guide explains the basics of conditional rendering and event handling in React. These are fundamental concepts that help you create dynamic and interactive user interfaces.
+
+## Conditional Rendering
+
+Conditional rendering in React allows you to render different components or elements based on certain conditions. It's similar to how conditions work in JavaScript.
+
+### Example 1: Using Ternary Operator
+
+```jsx
+import React, { useEffect } from "react";
+
+const ConditionalRendering = () => {
+  let age = 25;
+  let name = "Gautam";
+  useEffect(() => {
+    // if (age > 25) {
+    //   console.log("Your are eligible to Party");
+    // } else if (name === "Gautam" && age === 25) {
+    //   console.log("I am now full adult");
+    //   console.log("I can travel world now ");
+    // } else {
+    //   console.log("Gautam is not my name");
+    //   console.log("I cannot travel world");
+    // }
+    // here we are writing the if else conditional in concise way with the help of inline conditional rendering
+    // age > 25 ? (
+    //   console.log("you are now eligible to party")
+    // ) : name === "Gautam" && age === 25 ? (
+    //   <>
+    //     {console.log("i am now fully adult and mature to do on my own")}
+    //     {console.log("I can travel world now ")}
+    //   </>
+    // ) : (
+    //   <>
+    //     {console.log("Gautam is not my name")}
+    //     {console.log("I cannot travel world")}
+    //   </>
+    // );
+  }, []);
+  return (
+    <>
+      <div>
+        {age > 25 ? (
+          <h1>I am now eligible for the party and concert</h1>
+        ) : name === "Gautam" && age === 25 ? (
+          <>
+            <h1>i am now fully adult and mature to do on my own</h1>
+            <h2>I can travel world now</h2>
+          </>
+        ) : (
+          <>
+            <h1>Gautam is not my name</h1>
+            <h2>I cannot travel world</h2>
+          </>
+        )}
+      </div>
+    </>
+  );
+};
+
+export default ConditionalRendering;
+```
+
+_Conditional rendering in React allows you to dynamically display different elements or components based on specific conditions. This is akin to how conditions work in regular JavaScript, such as using if-else statements or ternary operators. It enables the UI to respond and change according to different states or props._
+
+## Event Handling
+
+Event handling in React involves responding to user interactions such as clicks, input changes, and form submissions.
+
+### Example 1: Handling Click Events
+
+```jsx
+import React, { useState } from "react";
+
+const EventHandling = () => {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <div className="bg-slate-200 min-h-screen flex justify-center items-center flex-col">
+        <h1 className="pb-4 ">{count}</h1>
+        <button
+          onClick={() => setCount(count + 1)}
+          className="p-2 rounded-xl bg-blue-500 "
+        >
+          Increment
+        </button>
+      </div>
+    </>
+  );
+};
+
+export default EventHandling;
+```
+
+### Example 2: Handling Form Submission
+
+```jsx
+import React, { useState } from "react";
+
+const FormSubmission = () => {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+  };
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Username", username);
+    console.log("Email", email);
+  };
+  return (
+    <>
+      <div className="bg-slate-200 min-h-screen flex flex-col justify-center items-center">
+        <h1 className="text-center font-bold italic">
+          Form Submission Event Handlign Example 2
+        </h1>
+        <form action="" onSubmit={handleSubmit}>
+          <div className="">
+            <input
+              type="text"
+              username="username"
+              value={username}
+              onChange={handleUsernameChange}
+              placeholder="Username"
+              className="my-4 p-2 rounded-lg text-center"
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              username="email"
+              value={email}
+              onChange={handleEmailChange}
+              placeholder="Email"
+              className=" p-2 rounded-lg text-center"
+            />
+          </div>
+          <div className="py-6 text-center">
+            <button
+              type="submit"
+              className="bg-blue-600 text-lg font-bold p-1 w-full hover:bg-blue-900 text-white rounded-lg"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </>
+  );
+};
+
+export default FormSubmission;
+```
+
+### Explanation:
+
+- **State:** `username` and `email` states are managed using the `useState` hook.
+- **Event Handler:** `handleEmailChange` and `handleUsernameChange` updates the respective state based on the input name.
+- **Form Submission:** `handleSubmit` prevents the default form submission and logs the input values to the console.
+  _Conditional rendering in React offers a powerful and flexible way to create dynamic and responsive user interfaces. Its integration with React's component-based architecture enhances readability, maintainability, performance, and reusability, making it superior to traditional methods of handling dynamic content in web applications. By leveraging conditional rendering, developers can build more interactive and efficient applications._
