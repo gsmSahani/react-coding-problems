@@ -6,6 +6,8 @@ import TodoP from "./Component/PropInReal/TodoP";
 import TodoItemC from "./Component/PropInReal/TodoItemC";
 import TodoApp from "./Component/PropInReal/TodoApp";
 import ConditionalRendering from "./Component/ConditionalRendering/ConditionalRendering";
+import EventHandling from "./Component/EventHandling/EventHandling";
+import FormSubmission from "./Component/EventHandling/FormSubmission";
 
 const App = () => {
   return (
@@ -14,7 +16,9 @@ const App = () => {
       {/* <States /> */}
       {/* <Propes /> */}
       {/* <TodoApp /> */}
-      <ConditionalRendering />
+      {/* <ConditionalRendering /> */}
+      {/* <EventHandling /> */}
+      <FormSubmission />
     </>
   );
 };
