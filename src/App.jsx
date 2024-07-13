@@ -5,6 +5,7 @@ import Propes from "./Component/Props/Propes";
 import TodoP from "./Component/PropInReal/TodoP";
 import TodoItemC from "./Component/PropInReal/TodoItemC";
 import TodoApp from "./Component/PropInReal/TodoApp";
+import ConditionalRendering from "./Component/ConditionalRendering/ConditionalRendering";
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       {/* <MapFilterData /> */}
       {/* <States /> */}
       {/* <Propes /> */}
-      <TodoApp />
+      {/* <TodoApp /> */}
+      <ConditionalRendering />
     </>
   );
 };
