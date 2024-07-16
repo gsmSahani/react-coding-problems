@@ -8,6 +8,7 @@ import TodoApp from "./Component/PropInReal/TodoApp";
 import ConditionalRendering from "./Component/ConditionalRendering/ConditionalRendering";
 import EventHandling from "./Component/EventHandling/EventHandling";
 import FormSubmission from "./Component/EventHandling/FormSubmission";
+import DynamicInputs from "./Component/DynamicInput/DynamicInputs";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       {/* <ConditionalRendering /> */}
       {/* <EventHandling /> */}
       <FormSubmission />
+      <DynamicInputs />
     </>
   );
 };

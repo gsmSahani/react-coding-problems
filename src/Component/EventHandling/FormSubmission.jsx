@@ -13,6 +13,8 @@ const FormSubmission = () => {
     e.preventDefault();
     console.log("Username", username);
     console.log("Email", email);
+    setUsername("");
+    setEmail("");
   };
   return (
     <>
