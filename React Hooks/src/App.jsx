@@ -4,6 +4,8 @@ import UseEffectHook from "./Components/UseEffect/UseEffectHook";
 import UserRefHook from "./Components/UseRef/UserRefHook";
 import FocusInputField from "./Components/UseRef/FocusInputField";
 import StoringMutableVal from "./Components/UseRef/StoringMutableVal";
+import UseMemoHook from "./Components/UseMemo/UseMemoHook";
+
 
 const App = () => {
   return (
@@ -12,7 +14,9 @@ const App = () => {
       {/* <UseEffectHook /> */}
       {/* <UserRefHook /> */}
       {/* <FocusInputField /> */}
-      <StoringMutableVal />
+      {/* <StoringMutableVal /> */}
+      {/* <UseMemoHook /> */}
+  
     </>
   );
 };
