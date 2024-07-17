@@ -10,6 +10,7 @@ import EventHandling from "./Component/EventHandling/EventHandling";
 import FormSubmission from "./Component/EventHandling/FormSubmission";
 import DynamicInputs from "./Component/DynamicInput/DynamicInputs";
 import Keys from "./Component/Keys/Keys";
+import Forms from "./Component/Forms/Forms";
 
 const App = () => {
   return (
@@ -22,7 +23,8 @@ const App = () => {
       {/* <EventHandling /> */}
       {/* <FormSubmission /> */}
       {/* <DynamicInputs /> */}
-      <Keys />
+      {/* <Keys /> */}
+      <Forms />
     </>
   );
 };
