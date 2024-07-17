@@ -9,6 +9,7 @@ import ConditionalRendering from "./Component/ConditionalRendering/ConditionalRe
 import EventHandling from "./Component/EventHandling/EventHandling";
 import FormSubmission from "./Component/EventHandling/FormSubmission";
 import DynamicInputs from "./Component/DynamicInput/DynamicInputs";
+import Keys from "./Component/Keys/Keys";
 
 const App = () => {
   return (
@@ -19,8 +20,9 @@ const App = () => {
       {/* <TodoApp /> */}
       {/* <ConditionalRendering /> */}
       {/* <EventHandling /> */}
-      <FormSubmission />
-      <DynamicInputs />
+      {/* <FormSubmission /> */}
+      {/* <DynamicInputs /> */}
+      <Keys />
     </>
   );
 };
