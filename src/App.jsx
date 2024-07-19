@@ -11,6 +11,7 @@ import FormSubmission from "./Component/EventHandling/FormSubmission";
 import DynamicInputs from "./Component/DynamicInput/DynamicInputs";
 import Keys from "./Component/Keys/Keys";
 import Forms from "./Component/Forms/Forms";
+import CssStyles from "./Component/CssStyles/CssStyles";
 
 const App = () => {
   return (
@@ -24,7 +25,9 @@ const App = () => {
       {/* <FormSubmission /> */}
       {/* <DynamicInputs /> */}
       {/* <Keys /> */}
-      <Forms />
+      {/* <Forms /> */}
+      {/* <DynamicInputs /> */}
+      <CssStyles />
     </>
   );
 };

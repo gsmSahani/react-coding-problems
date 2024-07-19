@@ -10,17 +10,50 @@ const DynamicInputs = () => {
       password: "",
     },
   ]);
+  const getInputValues = (data) => {
+    console.log(data.target.name);
+  };
+  const handleSubmit = () => {};
   return (
     <>
       <div className="bg-slate-300 min-h-screen flex flex-col justify-center items-center">
         <h1 className="font-bold text-center italic">Dynamic Inputs</h1>
-        <form onSubmit={handleSubmit}>
-            {inputs.map((input,index) =>(
-            <div key={index} className="mb-4">
-               <input type="text" placeholder="hello" />
-            </div>
+        <div className="max-w-md w-full">
+          <form onSubmit={handleSubmit} className="">
+            {inputs.map((input, index) => (
+              <div key={index} className="mb-4 flex flex-col">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="name"
+                  onChange={getInputValues}
+                  className="p-2 my-4 rounded-lg"
+                />
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="username"
+                  onChange={getInputValues}
+                  className="p-2 my-4 rounded-lg"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="email"
+                  onChange={getInputValues}
+                  className="p-2 my-4 rounded-lg"
+                />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="password"
+                  onChange={getInputValues}
+                  className="p-2 my-4 rounded-lg"
+                />
+              </div>
             ))}
-        </form>
+          </form>
+        </div>
       </div>
     </>
   );
