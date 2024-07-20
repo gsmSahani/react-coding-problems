@@ -14,6 +14,7 @@ import Forms from "./Component/Forms/Forms";
 import CssStyles from "./Component/CssStyles/CssStyles";
 import { Container } from "postcss";
 import ControlUncontrolledComp from "./Component/ControlledUncontrolled/ControlUncontrolledComp";
+import VirtualDom from "./Component/VirtualDOM/VirtualDom";
 
 const App = () => {
   return (
@@ -30,7 +31,8 @@ const App = () => {
       {/* <Forms /> */}
       {/* <DynamicInputs /> */}
       {/* <CssStyles /> */}
-      <ControlUncontrolledComp /> 
+      {/* <ControlUncontrolledComp />  */}
+      <VirtualDom />
     </>
   );
 };
