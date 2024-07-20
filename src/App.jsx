@@ -17,6 +17,9 @@ import ControlUncontrolledComp from "./Component/ControlledUncontrolled/ControlU
 import VirtualDom from "./Component/VirtualDOM/VirtualDom";
 import InnerHTML from "./Component/InnerHTML/InnerHTML";
 import ReactFragment from "./Component/ReactFragment/ReactFragment";
+import StateFull from "./Component/StatelessStatefull/StateFull";
+import StateLess from "./Component/StatelessStatefull/StateLess";
+import Api from "./Component/RestAPI/Api";
 
 const App = () => {
   return (
@@ -36,7 +39,10 @@ const App = () => {
       {/* <ControlUncontrolledComp />  */}
       {/* <VirtualDom /> */}
       {/* <InnerHTML /> */}
-      <ReactFragment />
+      {/* <ReactFragment /> */}
+      {/* <StateFull /> */}
+      {/* <StateLess /> */}
+      <Api />
     </>
   );
 };
