@@ -16,6 +16,7 @@ import { Container } from "postcss";
 import ControlUncontrolledComp from "./Component/ControlledUncontrolled/ControlUncontrolledComp";
 import VirtualDom from "./Component/VirtualDOM/VirtualDom";
 import InnerHTML from "./Component/InnerHTML/InnerHTML";
+import ReactFragment from "./Component/ReactFragment/ReactFragment";
 
 const App = () => {
   return (
@@ -34,7 +35,8 @@ const App = () => {
       {/* <CssStyles /> */}
       {/* <ControlUncontrolledComp />  */}
       {/* <VirtualDom /> */}
-      <InnerHTML />
+      {/* <InnerHTML /> */}
+      <ReactFragment />
     </>
   );
 };
