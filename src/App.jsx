@@ -12,6 +12,8 @@ import DynamicInputs from "./Component/DynamicInput/DynamicInputs";
 import Keys from "./Component/Keys/Keys";
 import Forms from "./Component/Forms/Forms";
 import CssStyles from "./Component/CssStyles/CssStyles";
+import { Container } from "postcss";
+import ControlUncontrolledComp from "./Component/ControlledUncontrolled/ControlUncontrolledComp";
 
 const App = () => {
   return (
@@ -27,7 +29,8 @@ const App = () => {
       {/* <Keys /> */}
       {/* <Forms /> */}
       {/* <DynamicInputs /> */}
-      <CssStyles />
+      {/* <CssStyles /> */}
+      <ControlUncontrolledComp /> 
     </>
   );
 };
