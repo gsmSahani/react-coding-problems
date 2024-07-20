@@ -15,6 +15,7 @@ import CssStyles from "./Component/CssStyles/CssStyles";
 import { Container } from "postcss";
 import ControlUncontrolledComp from "./Component/ControlledUncontrolled/ControlUncontrolledComp";
 import VirtualDom from "./Component/VirtualDOM/VirtualDom";
+import InnerHTML from "./Component/InnerHTML/InnerHTML";
 
 const App = () => {
   return (
@@ -32,7 +33,8 @@ const App = () => {
       {/* <DynamicInputs /> */}
       {/* <CssStyles /> */}
       {/* <ControlUncontrolledComp />  */}
-      <VirtualDom />
+      {/* <VirtualDom /> */}
+      <InnerHTML />
     </>
   );
 };
