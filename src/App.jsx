@@ -20,6 +20,7 @@ import ReactFragment from "./Component/ReactFragment/ReactFragment";
 import StateFull from "./Component/StatelessStatefull/StateFull";
 import StateLess from "./Component/StatelessStatefull/StateLess";
 import Api from "./Component/RestAPI/Api";
+import Deboouncing from "./Component/Debouncing/Deboouncing";
 
 const App = () => {
   return (
@@ -42,7 +43,8 @@ const App = () => {
       {/* <ReactFragment /> */}
       {/* <StateFull /> */}
       {/* <StateLess /> */}
-      <Api />
+      {/* <Api /> */}
+      <Deboouncing />
     </>
   );
 };
