@@ -29,6 +29,8 @@ import HelperFunc from "./Component/Helper/HelperFunc";
 import Recursions from "./Component/Recursion/Recursions";
 import Questions from "./Component/Zomato/Questions";
 import CustomHooks from "./Component/CustomHook/useJSONPlaceholder";
+import PromiseAsyncAwait from "./Component/Promise-async-await/PromiseAsyncAwait";
+import PromiseAsyncAwait2 from "./Component/Promise-async-await/PromiseAsyncAwait2";
 
 const App = () => {
   return (
@@ -60,7 +62,9 @@ const App = () => {
       {/* <HelperFunc /> */}
       {/* <Recursions /> */}
       {/* <Questions /> */}
-      <CustomHooks />
+      {/* <CustomHooks /> */}
+      {/* <PromiseAsyncAwait /> */}
+      <PromiseAsyncAwait2 />
     </>
   );
 };
