@@ -26,6 +26,8 @@ import ClassVSCLassName from "./Component/ClassVSCLassName/ClassVSCLassName";
 import HigherOrderComp from "./Component/HigherOrderComp/HigherOrderComp";
 import ReactLazyLoading from "./Component/ReactLazyLOading/ReactLazyLoading";
 import HelperFunc from "./Component/Helper/HelperFunc";
+import Recursions from "./Component/Recursion/Recursions";
+import Questions from "./Component/Zomato/Questions";
 
 const App = () => {
   return (
@@ -54,7 +56,9 @@ const App = () => {
       {/* <ClassVSCLassName /> */}
       {/* <HigherOrderComp /> */}
       {/* <ReactLazyLoading /> */}
-      <HelperFunc />
+      {/* <HelperFunc /> */}
+      {/* <Recursions /> */}
+      <Questions />
     </>
   );
 };
