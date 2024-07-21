@@ -21,6 +21,9 @@ import StateFull from "./Component/StatelessStatefull/StateFull";
 import StateLess from "./Component/StatelessStatefull/StateLess";
 import Api from "./Component/RestAPI/Api";
 import Deboouncing from "./Component/Debouncing/Deboouncing";
+import ReactContextAPI from "./Component/ContextAPI/ReactContextAPI";
+import ClassVSCLassName from "./Component/ClassVSCLassName/ClassVSCLassName";
+import HigherOrderComp from "./Component/HigherOrderComp/HigherOrderComp";
 
 const App = () => {
   return (
@@ -44,7 +47,10 @@ const App = () => {
       {/* <StateFull /> */}
       {/* <StateLess /> */}
       {/* <Api /> */}
-      <Deboouncing />
+      {/* <Deboouncing /> */}
+      {/* <ReactContextAPI /> */}
+      {/* <ClassVSCLassName /> */}
+      <HigherOrderComp />
     </>
   );
 };
