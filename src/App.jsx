@@ -24,6 +24,7 @@ import Deboouncing from "./Component/Debouncing/Deboouncing";
 import ReactContextAPI from "./Component/ContextAPI/ReactContextAPI";
 import ClassVSCLassName from "./Component/ClassVSCLassName/ClassVSCLassName";
 import HigherOrderComp from "./Component/HigherOrderComp/HigherOrderComp";
+import ReactLazyLoading from "./Component/ReactLazyLOading/ReactLazyLoading";
 
 const App = () => {
   return (
@@ -50,7 +51,8 @@ const App = () => {
       {/* <Deboouncing /> */}
       {/* <ReactContextAPI /> */}
       {/* <ClassVSCLassName /> */}
-      <HigherOrderComp />
+      {/* <HigherOrderComp /> */}
+      <ReactLazyLoading />
     </>
   );
 };
