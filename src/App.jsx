@@ -31,6 +31,7 @@ import Questions from "./Component/Zomato/Questions";
 import CustomHooks from "./Component/CustomHook/useJSONPlaceholder";
 import PromiseAsyncAwait from "./Component/Promise-async-await/PromiseAsyncAwait";
 import PromiseAsyncAwait2 from "./Component/Promise-async-await/PromiseAsyncAwait2";
+import SearchFilter from "./Component/SearchFilter/SearchFilter";
 
 const App = () => {
   return (
@@ -64,7 +65,8 @@ const App = () => {
       {/* <Questions /> */}
       {/* <CustomHooks /> */}
       {/* <PromiseAsyncAwait /> */}
-      <PromiseAsyncAwait2 />
+      {/* <PromiseAsyncAwait2 /> */}
+      <SearchFilter />
     </>
   );
 };
