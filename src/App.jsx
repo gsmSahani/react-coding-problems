@@ -28,6 +28,7 @@ import ReactLazyLoading from "./Component/ReactLazyLOading/ReactLazyLoading";
 import HelperFunc from "./Component/Helper/HelperFunc";
 import Recursions from "./Component/Recursion/Recursions";
 import Questions from "./Component/Zomato/Questions";
+import CustomHooks from "./Component/CustomHook/useJSONPlaceholder";
 
 const App = () => {
   return (
@@ -58,7 +59,8 @@ const App = () => {
       {/* <ReactLazyLoading /> */}
       {/* <HelperFunc /> */}
       {/* <Recursions /> */}
-      <Questions />
+      {/* <Questions /> */}
+      <CustomHooks />
     </>
   );
 };
