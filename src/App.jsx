@@ -25,6 +25,7 @@ import ReactContextAPI from "./Component/ContextAPI/ReactContextAPI";
 import ClassVSCLassName from "./Component/ClassVSCLassName/ClassVSCLassName";
 import HigherOrderComp from "./Component/HigherOrderComp/HigherOrderComp";
 import ReactLazyLoading from "./Component/ReactLazyLOading/ReactLazyLoading";
+import HelperFunc from "./Component/Helper/HelperFunc";
 
 const App = () => {
   return (
@@ -52,7 +53,8 @@ const App = () => {
       {/* <ReactContextAPI /> */}
       {/* <ClassVSCLassName /> */}
       {/* <HigherOrderComp /> */}
-      <ReactLazyLoading />
+      {/* <ReactLazyLoading /> */}
+      <HelperFunc />
     </>
   );
 };
